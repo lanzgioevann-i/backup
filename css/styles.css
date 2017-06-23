@@ -1,0 +1,109 @@
+body{
+	margin:0px 0px; 
+	font-family: 'roboto';
+}
+
+
+#hero{
+  background-image: url('../img/header.png');
+  background-size:cover;
+  position:relative;
+}
+
+.header{
+  position:absolute;
+  top:50%;
+  width:100%;
+  color:#fff;
+  font-size: 2em;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+   	-webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+
+}
+
+@media only screen and (min-width: 991px) {
+    #header-content h1{
+        font-size: 2em;
+    }
+	
+	#typed-strings h1{
+        font-size: 2em;
+		
+	}
+}
+
+@media only screen and (max-width: 990px) {
+    #header-content h1{
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    #header-content h1{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #header-content h1{
+        font-size: 1.17em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #header-content h1{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #header-content h1{
+        font-size: .83em;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    #header-content h1{
+        font-size: .67em;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    #header-content h1{
+        font-size: .5em;
+    }
+}
+
+.content {
+	min-height: 200vh;
+}
+
+#navbar {
+	margin-top: -8vh;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+	transition: all 0.5s ease-in-out;
+	opacity: 0.5;
+}
+
+#navbar.shownav{
+	margin-top: 0vh;
+	opacity: 1;
+}
+
+#navbar.hidenav{
+	margin-top: -8vh;
+	opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .objective {
+        text-align: center;
+    }
+}
+
+.parallax-container {
+  height: 100vh;
+}
